@@ -1,0 +1,45 @@
+@charset "utf-8";
+html,body,h1,h2,h3,h4,h5,h6,div,span,a,i,p,em,form,input,button,img,ul,li,ol,select,header,section{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    border: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/* a:hover{
+    color: red;
+} */
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+/* input{
+    outline: none;
+} */
+input::placeholder{
+    font-size: 16px;
+    color: #ccc;
+    font-style: oblique;
+}
+/* input[type=text]:focus,input[type=password]:focus{
+    border: 2px solid #ccc;
+} */
+ul,li,ol{
+    list-style: none;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow:hidden;
+}

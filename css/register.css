@@ -1,0 +1,137 @@
+.head_wrap {
+  width: 980px;
+  height: 76px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+.head_wrap a {
+  display: block;
+  width: 330px;
+  height: 76px;
+  overflow: hidden;
+}
+.head_wrap a span {
+  display: block;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  margin: 30px 0 0 20px;
+  float: left;
+  color: #666;
+  font-size: 20px;
+}
+.head_wrap a img {
+  display: block;
+  margin-top: 15px;
+  float: left;
+}
+.head_wrap .head_right {
+  width: 200px;
+  height: 76px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.head_wrap .head_right a {
+  display: block;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #666;
+  background: #ccc;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+  color: #666;
+}
+.head_wrap .head_right span {
+  color: #666;
+  font-size: 14px;
+}
+.content_wrap {
+  width: 980px;
+  margin: 20px auto 0;
+}
+.content_wrap .form_wrap {
+  width: 720px;
+  float: left;
+}
+.content_wrap .form_wrap form {
+  width: 720px;
+}
+.content_wrap .form_wrap form label[for=pwd] span {
+  opacity: 0;
+}
+.content_wrap .form_wrap form input {
+  width: 350px;
+  height: 40px;
+  margin: 10px 0;
+  text-indent: 10px;
+}
+.content_wrap .form_wrap form input[id=yzCode] {
+  width: 178px;
+  margin-right: 10px;
+}
+.content_wrap .form_wrap form input[type=button] {
+  width: 160px;
+  height: 40px;
+  background: #ccc;
+  border: 1px solid #666;
+}
+.content_wrap .form_wrap form input[type=checkbox] {
+  width: 13px;
+  height: 13px;
+  margin-left: 55px;
+}
+.content_wrap .form_wrap form label[for=isAgree] {
+  font-size: 12px;
+}
+.content_wrap .form_wrap form a {
+  color: #1b66c7;
+  font-size: 12px;
+}
+.content_wrap .form_wrap form a span {
+  color: black;
+}
+.content_wrap .form_wrap form a:hover {
+  text-decoration-line: underline;
+}
+.content_wrap .form_wrap form input[type=button]:hover {
+  background: #999;
+}
+.content_wrap .form_wrap form button[class=register] {
+  width: 350px;
+  height: 50px;
+  background: #de0909;
+  margin-left: 55px;
+  font-weight: 700;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+.content_wrap .form_wrap form button[class=register]:hover {
+  background: #eb3737;
+}
+.content_wrap .reg_msg {
+  float: right;
+  border: 1px solid #d1eeff;
+  width: 240px;
+  height: 408px;
+  background: #f5fbff;
+}
+.content_wrap .reg_msg h3 {
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #666;
+  margin: 0 auto;
+  text-indent: 15px;
+  border-bottom: 1px solid #e6edf2;
+}
+.copyright {
+  width: 100px;
+  margin: 100px auto 0;
+  color: #7a77c8;
+}

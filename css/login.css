@@ -1,0 +1,133 @@
+header {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+header h1 {
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+}
+header h3 {
+  float: left;
+  width: 100px;
+  height: 26px;
+  margin: 40px 0 0 20px;
+}
+header .register {
+  float: right;
+  margin-top: 40px;
+}
+header .register a {
+  display: inline-block;
+  width: 62px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+}
+main {
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .login_bg {
+  width: 510px;
+  height: 304px;
+}
+main .login_bg img {
+  width: 100%;
+  height: 100%;
+}
+main .login_box {
+  width: 304px;
+  height: 408px;
+  border: 1px solid #ccc;
+  padding: 0 28px;
+}
+main .login_box .login_logo {
+  height: 32px;
+  margin-top: 20px;
+}
+main .login_box .login_logo img {
+  display: inline-block;
+}
+main .login_box form {
+  margin-top: 20px;
+}
+main .login_box form input {
+  text-indent: 10px;
+  margin-top: 10px;
+  width: 302px;
+  height: 42px;
+}
+main .login_box form input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+}
+main .login_box form div button {
+  width: 304px;
+  height: 42px;
+  margin-top: 15px;
+  background: #f04146;
+  border: 0;
+  color: white;
+}
+main .login_box form div a {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #2e82ff;
+}
+main .login_box form div a:hover {
+  color: #ccc;
+}
+main .login_box form div a:nth-of-type(2) {
+  float: right;
+}
+main .login_box .login_footer {
+  height: 60px;
+  background: #f0f6ff;
+  margin-top: 40px;
+  color: #2e82ff;
+}
+main .login_box .login_footer div {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  height: 60px;
+  line-height: 60px;
+}
+main .login_box .login_footer a {
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  display: inline-block;
+  margin-left: 130px;
+  color: #2e82ff;
+}
+main .login_box .login_footer a:hover {
+  color: #ccc;
+}
+footer {
+  height: 69px;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 100px 0 0 0 ;
+}
+footer .footer_wrap {
+  width: 395px;
+  height: 39px;
+}
+footer .friend_link {
+  display: flex;
+  justify-content: space-around;
+}
+footer .copyright {
+  width: 400px;
+  font-size: 14px;
+  color: #a7a7a7;
+}

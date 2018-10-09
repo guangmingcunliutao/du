@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* 主要内容 */
+.product-swiper{
+    height: 455px;
+}
+.product-swiper img{
+    width: 100%;
+    height: 100%;
+}
