@@ -67,9 +67,9 @@ h1 a img{
     font-size: 24px;
 }
 /* 隐藏菜单栏、登录二维码 */
-/* .menu-wrap{
+.menu-wrap{
     display: none;
-} */
+}
 .menu-container{
     height: 298px;
     display: flex;
@@ -81,18 +81,44 @@ h1 a img{
     width: 240px;
     height: 200px;
     border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container .menu-admin a{
+    color: #256eff;
+    margin-top: 15px;
 }
 .menu-container .menu-infor{
     flex: 1;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.menu-container .menu-infor div{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-container .menu-infor div a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .menu-container .menu-QRcode{
     border-left: 1px solid #ccc;
     width: 240px;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .menu-QRcode p{
-    font-size: 60px;
+    font-size: 120px;
 }
 .head-icon a{
     display: block;
@@ -102,4 +128,39 @@ h1 a img{
 }
 .head-icon a span{
     font-size: 24px;
+}
+.foot_wrap{
+    height: 258px;
+    background: #f9f9fa;
+    box-sizing: border-box;
+}
+.foot_wrap ul{
+    display: flex;
+    justify-content: space-between;
+    width: 1130px;
+    margin: 0 auto;
+    padding: 30px 0 50px 0;
+}
+.foot_wrap ul i{
+    font-size: 30px;
+}
+.foot_wrap ul li{
+    height: 33px;
+    line-height: 33px;
+}
+.foot_inner{
+    width: 1208px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.foot_inner .left a{
+    margin-right: 15px;
+}
+.foot_inner .right .duKf{
+    width: 126px;
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    line-height: 34px;
 }

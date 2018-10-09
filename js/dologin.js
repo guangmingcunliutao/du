@@ -35,6 +35,7 @@ var dologin = (function () {
                 alert(data.msg);
             } else if (data.code == 200) {
                 alert(data.msg);
+                window.location.assign('index.html');
             }
         }
     }

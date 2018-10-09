@@ -1,9 +1,70 @@
 @charset "utf-8";
 /* 主要内容 */
-.product-swiper{
-    height: 455px;
+.product-swiper {
+  height: 455px;
 }
-.product-swiper img{
-    width: 100%;
-    height: 100%;
+.product-swiper img {
+  width: 100%;
+  height: 100%;
+}
+.product_list {
+  width: 1208px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product_list .pro_item {
+  display: block;
+  width: 390px;
+  height: 489px;
+}
+.product_list .pro_item .pro_wrap {
+  width: 390px;
+  height: 489px;
+  text-align: center;
+}
+.product_list .pro_item .pro_wrap .pro_img {
+  width: 280px;
+  height: 280px;
+  margin-left: 55px;
+}
+.product_list .pro_item .pro_wrap .pro_name {
+  height: 28px;
+  padding-top: 35px;
+}
+.product_list .pro_item .pro_wrap .pro_name .name {
+  display: inline-block;
+  font-size: 20px;
+}
+.product_list .pro_item .pro_wrap .pro_name .pro_tag {
+  display: inline-block;
+  width: 48px;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  background: #ff444a;
+  color: #fff;
+}
+.product_list .pro_item .pro_wrap .pro_desc {
+  color: #ff444a;
+  height: 30px;
+  line-height: 30px;
+}
+.product_list .pro_item .pro_wrap .pro_price div {
+  display: inline-block;
+}
+.product_list .pro_item .pro_wrap .pro_price .sale_price {
+  color: #ff444a;
+}
+.product_list .pro_item .pro_wrap .pro_price .cost_price {
+  text-decoration: line-through;
+  color: #7d7d7d;
+}
+.product_list .pro_item:hover .pro_img {
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.product_list .pro_item:hover {
+  box-shadow: 1px 0px 5px 1px #ccc;
 }
