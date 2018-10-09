@@ -72,6 +72,7 @@ main .login_box form div button {
   background: #f04146;
   border: 0;
   color: white;
+  cursor: pointer;
 }
 main .login_box form div a {
   display: inline-block;
