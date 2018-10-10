@@ -22,9 +22,9 @@ if ($password == '') {
     if ($row == null) {
         $arr = array("code" => "1000", "msg" => "登录失败，用户名或密码错误");
     } else {
-        $arr = array("code" => "200", "msg" => "登录成功");
+        $arr = array("code" => "200", "msg" => "登录成功","data" =>array("username"=>"$username"));
     }
-    $arr = json_encode($arr);
-    echo $arr;
+    echo json_encode($arr);
 }
+mysqli_close($link);
 ?>

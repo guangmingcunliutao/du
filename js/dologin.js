@@ -34,7 +34,8 @@ var dologin = (function () {
             if (data.code == 1000) {
                 alert(data.msg);
             } else if (data.code == 200) {
-                alert(data.msg);
+                // alert(data.msg);
+                cookieHandle.setCookie('username',data.data.username,1);
                 window.location.assign('index.html');
             }
         }

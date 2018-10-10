@@ -3,9 +3,9 @@
 .product-swiper {
   height: 455px;
 }
-.product-swiper img {
-  width: 100%;
-  height: 100%;
+.product-swiper .swiper-container {
+  height: 455px;
+  cursor: pointer;
 }
 .product_list {
   width: 1208px;
@@ -48,7 +48,7 @@
   color: #fff;
 }
 .product_list .pro_item .pro_wrap .pro_desc {
-  color: #ff444a;
+  color: #666;
   height: 30px;
   line-height: 30px;
 }
@@ -61,6 +61,10 @@
 .product_list .pro_item .pro_wrap .pro_price .cost_price {
   text-decoration: line-through;
   color: #7d7d7d;
+}
+.product_list .pro_item .pro_wrap .pro_price .cost_price2 {
+  text-decoration: none;
+  color: #ff444a;
 }
 .product_list .img_scaleD {
   transition: 0.7s;

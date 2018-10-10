@@ -46,7 +46,7 @@
                 <div class="menu-wrap">
                     <div class="menu-container">
                         <div class="menu-admin">
-                            <span>用户名</span>
+                            <span class="username">用户名</span>
                             <a href="login.html">登录</a>
                         </div>
                         <div class="menu-infor">
@@ -75,9 +75,9 @@
                 <div class="product-swiper">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/bannerXb.png" alt=""></div>
-                            <div class="swiper-slide"><img src="images/bannerXdzj.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="images/bannerDy.png" alt=""></div>
+                            <div class="swiper-slide" style="background:url('images/bannerXb.png') no-repeat;background-size: contain;"></div>
+                            <div class="swiper-slide" style="background:url('images/bannerXdzj.jpg') no-repeat;background-size: contain;"></div>
+                            <div class="swiper-slide" style="background:url('images/bannerDy.png') no-repeat;background-size: contain;"></div>
                         </div>
                         <!-- 如果需要导航按钮 -->
                         <div class="swiper-button-prev"></div>
@@ -86,90 +86,6 @@
                 </div>
                 <!-- 轮播图结束 -->
                 <div class="product_list">
-                    <a href="#" class="pro_item">
-                        <div class="pro_wrap">
-                            <img src="images/yx.png" alt="" class="pro_img">
-                            <div class="pro_name">
-                                <p class="name">小度智能音响</p>
-                                <span class="pro_tag">新品</span>
-                            </div>
-                            <p class="pro_desc">伶俐动听的百度 AI 小当家</p>
-                            <div class="pro_price">
-                                <div class="sale_price">89元</div>
-                                <div class="cost_price">249元</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="pro_item">
-                        <div class="pro_wrap">
-                            <img src="images/pro-xdzj.png" alt="" class="pro_img">
-                            <div class="pro_name">
-                                <p class="name">小度智能音响</p>
-                                <span class="pro_tag">新品</span>
-                            </div>
-                            <p class="pro_desc">伶俐动听的百度 AI 小当家</p>
-                            <div class="pro_price">
-                                <div class="sale_price">89元</div>
-                                <div class="cost_price">249元</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="pro_item">
-                        <div class="pro_wrap">
-                            <img src="images/pro-dy.png" alt="" class="pro_img">
-                            <div class="pro_name">
-                                <p class="name">小度智能音响</p>
-                                <span class="pro_tag">新品</span>
-                            </div>
-                            <p class="pro_desc">伶俐动听的百度 AI 小当家</p>
-                            <div class="pro_price">
-                                <div class="sale_price">89元</div>
-                                <div class="cost_price">249元</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="pro_item">
-                        <div class="pro_wrap">
-                            <img src="images/pro-cz.png" alt="" class="pro_img">
-                            <div class="pro_name">
-                                <p class="name">小度智能音响</p>
-                                <span class="pro_tag">新品</span>
-                            </div>
-                            <p class="pro_desc">伶俐动听的百度 AI 小当家</p>
-                            <div class="pro_price">
-                                <div class="sale_price">89元</div>
-                                <div class="cost_price">249元</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="pro_item">
-                        <div class="pro_wrap">
-                            <img src="images/pro-ykq.png" alt="" class="pro_img">
-                            <div class="pro_name">
-                                <p class="name">小度智能音响</p>
-                                <span class="pro_tag">新品</span>
-                            </div>
-                            <p class="pro_desc">伶俐动听的百度 AI 小当家</p>
-                            <div class="pro_price">
-                                <div class="sale_price">89元</div>
-                                <div class="cost_price">249元</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="pro_item">
-                        <div class="pro_wrap">
-                            <img src="images/pro-sp.jpg" alt="" class="pro_img">
-                            <div class="pro_name">
-                                <p class="name">小度智能音响</p>
-                                <span class="pro_tag">新品</span>
-                            </div>
-                            <p class="pro_desc">伶俐动听的百度 AI 小当家</p>
-                            <div class="pro_price">
-                                <div class="sale_price">89元</div>
-                                <div class="cost_price">249元</div>
-                            </div>
-                        </div>
-                    </a>
                 </div>
             </main>
             <!-- 主要内容结束 -->
@@ -202,9 +118,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/jquery.min.js"></script>
+    <script src="js/cookieHandle.js"></script>
     <script src="js/indexHand.js"></script>
     <script>
         indexHand.init();
+        $('.username').text(cookieHandle.getCookie('username'));
     </script>
 </body>
 

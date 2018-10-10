@@ -35,43 +35,5 @@ if($row != null){
         echo $arr;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* if ($password == '') {
-    $select_sql = "SELECT username from user where username = '$username'";
-    $result = $link->query($select_sql);
-    $row = $result->fetch_assoc();
-    if ($row != null) {
-        $arr = ["code" => "1000", "msg" => "用户名已存在"];
-        $arr = json_encode($arr);
-        echo $arr;
-    } else if ($row == null) {
-        
-    }
-} else if ($password != '') {
-    $select_sql = "SELECT username from user where username = '$username'";
-    $result = $link->query($select_sql);
-    $row = $result->fetch_assoc();
-    if ($row != null) {
-        $arr = ["code" => "1000", "msg" => "用户名已存在"];
-        $arr = json_encode($arr);
-        echo $arr;
-    } else if ($row == null) {
-        
-    }
-} */
+mysqli_close($link);
 ?>
