@@ -1,0 +1,170 @@
+header {
+    position: relative;
+}
+.route{
+    height: 40px;
+    background: #ccc;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding: 0 0 0 27.5px;
+    font-size: 12px;
+    .jt{
+        display: inline-block;
+        border: 2px solid #666;
+        transform: rotate(45deg);
+        width: 10px;
+        height: 10px;
+        border-bottom: 0;
+        border-left: 0;
+        margin-right: 6px;
+    }
+}
+#content_wrap {
+    width: 1208px;
+    height: 608px;
+    margin: 0 auto;
+    .product {
+        width: 1208px;
+        height: 608px;
+        box-sizing: border-box;
+        padding: 40px 0 24px;
+        display: flex;
+        .pro_img{
+            width: 485px;
+            height: 544px;
+            .img_con{
+                box-sizing: border-box;
+                width: 440px;
+                height: 440px;
+                border: 1px solid #ccc;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .img_list{
+                width: 440px;
+                height: 90px;
+                margin-top: 20px;
+                ul{
+                    height: 90px;
+                    li{
+                        box-sizing: border-box;
+                        width: 90px;
+                        height: 90px;
+                        float: left;
+                        margin-right: 20px;
+                        border: 1px solid #ccc;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    li:hover{
+                        border: 1px solid red;
+                    }
+                }
+            }
+        }
+        .pro_detail{
+            flex: 1;
+            .pro_info{
+                height: 40px;
+                .pro_name_desc{
+                    height: 30px;
+                    padding-bottom: 10px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 30px;
+                }
+            }
+            .pro_activity{
+                height: 140px;
+                background: #ddd;
+                box-sizing: border-box;
+                padding: 10px 0 0 10px;
+                .pro_price{
+                    height: 60px;
+                    .price_sale{
+                        display: inline-block;
+                        width: 100px;
+                        height: 30px;
+                        color: #f04146;
+                        em{
+                            font-style: normal;
+                            font-size: 26px;
+                            font-weight: 700;
+                        }
+                    }
+                    .price_cost{
+                        display: inline-block;
+                        width: 52px;
+                        height: 16px;
+                        font-size: 12px;
+                        text-decoration: line-through;
+                        color: #999;
+                    }
+                }
+                .info_activity{
+                    height: 35px;
+                    span{
+                        color: #999;
+                    }
+                    div,p{
+                        display: inline-block;
+                    }
+                    .activ_list{
+                        margin-left: 20px;
+                        .font_light{
+                            display: inline-block;
+                            width: 60px;
+                            height: 18px;
+                            background: #f04146;
+                            font-size: 14px;
+                            text-align: center;
+                            line-height: 18px;
+                            color: white;
+                            border-radius: 5px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .info_refer{
+                    span{
+                        color: #999;
+                    }
+                    p{
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .sele_color{
+                height: 36px;
+                margin-top: 20px;
+                line-height: 36px;
+                p{
+                    display: inline-block;
+                }
+                .color{
+                    color: #999;
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+                .color_kind{
+                    width: 80px;
+                    height: 36px;
+                    margin-left: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                    background: white;
+                    border: 1px solid red;
+                    border-radius: 5px;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

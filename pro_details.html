@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title>产品详情</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_862955_53t89pj3dlc.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/pro_details.css">
 </head>
 
 <body>
@@ -69,23 +68,59 @@
                 </div>
             </header>
             <!-- 头部结束 -->
-            <!-- 主要内容开始 -->
+            <!-- 主要内容 -->
             <main>
-                <!-- 轮播图开始 -->
-                <div class="product-swiper">
-                    <div class="swiper-container pro_banner">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background:url('images/bannerXb.png') no-repeat;background-size: contain;"></div>
-                            <div class="swiper-slide" style="background:url('images/bannerXdzj.jpg') no-repeat;background-size: contain;"></div>
-                            <div class="swiper-slide" style="background:url('images/bannerDy.png') no-repeat;background-size: contain;"></div>
-                        </div>
-                        <!-- 如果需要导航按钮 -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
+                <div class="route">
+                    <a href="index.html">首页</a>
+                    <i class="jt"></i>
+                    <span>商品详情</span>
                 </div>
-                <!-- 轮播图结束 -->
-                <div class="product_list">
+                <div id="content_wrap">
+                    <div class="product">
+                        <div class="pro_img">
+                            <div class="img_con">
+                                <img src="images/pro_xdzj.png" alt="">
+                            </div>
+                            <div class="img_list">
+                                <ul>
+                                    <li><img src="images/pro_xdzj.png" alt=""></li>
+                                    <li><img src="images/pro_xdzj.png" alt=""></li>
+                                    <li><img src="images/pro_xdzj.png" alt=""></li>
+                                    <li><img src="images/pro_xdzj.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pro_detail">
+                            <div class="pro_info">
+                                <p class="pro_name_desc">小度智能音箱 伶俐动听的百度 AI 小当家</p>
+                            </div>
+                            <div class="pro_activity">
+                                <div class="pro_price">
+                                    <div class="price_sale">
+                                        ¥<em>89.00</em>
+                                    </div>
+                                    <div class="price_cost">
+                                        ¥<em>249.00</em>
+                                    </div>
+                                </div>
+                                <div class="info_activity">
+                                    <span>促销</span>
+                                    <div class="activ_list">
+                                        <span class="font_light">加价购</span>
+                                        <p class="activ_cont">买小度音箱加39元购原价49元博联智能插座</p>
+                                    </div>
+                                </div>
+                                <div class="info_refer">
+                                    <span>服务</span>
+                                    <p class="info_cont">7天无理由退货；满150元包邮；顺丰配货</p>
+                                </div>
+                            </div>
+                            <div class="sele_color">
+                                <span class="color">颜色</span>
+                                <button class="color_kind">白色</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <!-- 主要内容结束 -->
@@ -117,16 +152,11 @@
             <!-- 底部结束 -->
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-    <script src="js/swiper.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/cookieHandle.js"></script>
-    <script src="js/proData.js"></script>
     <script src="js/headHand.js"></script>
     <script>
-        proData.init();
         headHand.init();
-        
     </script>
 </body>
 

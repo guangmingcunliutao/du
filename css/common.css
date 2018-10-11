@@ -7,7 +7,7 @@ header{
     position: absolute;
     z-index: 10;
 }
-header.bg-white{
+.bg-white{
     background: #fff;
 }
 header .header{
@@ -69,6 +69,8 @@ h1 a img{
 /* 隐藏菜单栏、登录二维码 */
 .menu-wrap{
     display: none;
+    width: 100%;
+    position: absolute;
 }
 .menu-container{
     height: 298px;
