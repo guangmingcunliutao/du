@@ -17,55 +17,6 @@
         <div>
             <!-- 头部开始 -->
             <header>
-                <div class="header">
-                    <!-- logo -->
-                    <h1>
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="图片资源加载失败">
-                        </a>
-                    </h1>
-                    <!-- 菜单 -->
-                    <div class="head-right">
-                        <div class="head-nav">
-                            <a href="#">小度智能音响</a>
-                            <a href="#">小度在家</a>
-                            <a href="#">渡鸦(raven H)</a>
-                        </div>
-                        <div class="head-icon">
-                            <div class="head-menu">
-                                <span class="iconfont icon-caidan"></span>
-                            </div>
-                            <a href="#">
-                                <span class="iconfont icon-gouwuche"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 隐藏菜单 -->
-                <div class="menu-wrap bg-white">
-                    <div class="menu-container">
-                        <div class="menu-admin">
-                            <span class="username"></span>
-                            <a href="login.html">登录</a>
-                        </div>
-                        <div class="menu-infor">
-                            <div>
-                                <a><i class="iconfont icon-dingdan"></i><span>我的订单</span></a>
-                                <a><i class="iconfont icon-dizhi"></i><span>收货地址</span></a>
-                                <a><i class="iconfont icon-shouhoufuwu"></i><span>售后服务</span></a>
-                            </div>
-                            <div>
-                                <a><i class="iconfont icon-tongdao"></i><span>Du码通道</span></a>
-                                <a><i class="iconfont icon-shequ"></i><span>小度社区</span></a>
-                                <a><i class="iconfont icon-fuli"></i><span>我的福利</span></a>
-                            </div>
-                        </div>
-                        <div class="menu-QRcode">
-                            <span>移动端</span>
-                            <p class="iconfont icon-erweima"></p>
-                        </div>
-                    </div>
-                </div>
             </header>
             <!-- 头部结束 -->
             <!-- 主要内容 -->
@@ -119,6 +70,20 @@
                                 <span class="color">颜色</span>
                                 <button class="color_kind">白色</button>
                             </div>
+                            <div class="count_car_wrap">
+                                <div class="count_wrap">
+                                    <span>数量</span>
+                                    <div class="inp_num">
+                                        <div class="num_sub"></div>
+                                        <input type="number" max="10" min="1" value="1" class="countInp">
+                                        <div class="num_add"></div>
+                                    </div>
+                                </div>
+                                <div class="car_btn">
+                                    <button class="btnAddCar">加入购物车</button>
+                                    <button class="btnBuy">立即购买</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,28 +91,6 @@
             <!-- 主要内容结束 -->
             <!-- 底部开始 -->
             <footer>
-                <div class="foot_wrap">
-                    <ul>
-                        <li><i class="iconfont icon-tianwuliyoutuihuo"></i>7天无理由退货</li>
-                        <li><i class="iconfont icon-15tianmianfeihuanhuo24px"></i>15天免费换货</li>
-                        <li><i class="iconfont icon-baoyou"></i>满150包邮</li>
-                        <li><i class="iconfont icon-fuwubaozhang"></i>百度服务保障</li>
-                    </ul>
-                    <div class="foot_inner">
-                        <div class="left">
-                            <a href="#">帮助中心</a>
-                            <a href="#">帮助中心</a>
-                            <a href="#">帮助中心</a>
-                            <a href="#">帮助中心</a>
-                            <a href="#">帮助中心</a>
-                            <a href="#">帮助中心</a>
-                        </div>
-                        <div class="right">
-                            <div class="duKf"><i class="iconfont icon-zaixiankefu"></i>小度在线客服</div>
-                            <div class="kfTel">400-808-1111</div>
-                        </div>
-                    </div>
-                </div>
             </footer>
             <!-- 底部结束 -->
         </div>
@@ -155,8 +98,10 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/cookieHandle.js"></script>
     <script src="js/headHand.js"></script>
+    <script src="js/pro_details.js"></script>
     <script>
         headHand.init();
+        pro_details.init();
     </script>
 </body>
 

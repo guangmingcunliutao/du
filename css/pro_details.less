@@ -155,7 +155,7 @@ header {
                 }
                 .color_kind{
                     width: 80px;
-                    height: 36px;
+                    height: 34px;
                     margin-left: 10px;
                     text-align: center;
                     cursor: pointer;
@@ -163,6 +163,73 @@ header {
                     border: 1px solid red;
                     border-radius: 5px;
                     outline: none;
+                }
+            }
+            .count_car_wrap{
+                height: 101px;
+                margin-top: 25px;
+                padding-left: 10px;
+                .count_wrap{
+                    height: 63px;
+                    position: relative;
+                    span{
+                        display: inline-block;
+                        width: 45px;
+                        height: 18px;
+                        font-size: 14px;
+                        color: #999;
+                    }
+                    .inp_num{
+                        position: absolute;
+                        display: inline-block;
+                        height: 29px;
+                        div{
+                            display: inline-block;
+                            width: 20px;
+                            height: 27px;
+                            border: 1px solid #e1e1e1;
+                            cursor: pointer;
+                            float: left;
+                            text-align: center;
+                        }
+                        div:nth-of-type(1)::after{
+                            content: "-";
+                        }
+                        div:nth-of-type(2)::after{
+                            content: "+";
+                        }
+                        input{
+                            display: inline-block;
+                            width: 52px;
+                            height: 27px;
+                            outline: none;
+                            text-align: center;
+                            border: 0;
+                            border-top: 1px solid #e1e1e1;
+                            border-bottom: 1px solid #e1e1e1;
+                            float: left;
+                        }
+                        // 去掉数字input框的上下箭头
+                        /* input::-webkit-outer-spin-button, */
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                        }
+                    }
+                }
+                .car_btn{
+                    width: 350px;
+                    height: 48px;
+                    button{
+                        width: 146px;
+                        height: 48px;
+                        border: 0;
+                        border-radius: 5px;
+                        margin-right: 15px;
+                        color: white;
+                        cursor: pointer;
+                        background:linear-gradient(90deg,#ffbc79,#ff695c);
+                        outline: none;
+                    }
                 }
             }
         }
