@@ -1,5 +1,6 @@
 header {
     position: relative;
+    height: 110px;
 }
 .route{
     height: 40px;
@@ -183,7 +184,7 @@ header {
                         position: absolute;
                         display: inline-block;
                         height: 29px;
-                        div{
+                        .num_sub,.num_add{
                             display: inline-block;
                             width: 20px;
                             height: 27px;
@@ -192,11 +193,24 @@ header {
                             float: left;
                             text-align: center;
                         }
-                        div:nth-of-type(1)::after{
+                        .num_sub::after{
                             content: "-";
                         }
-                        div:nth-of-type(2)::after{
+                        .num_add::after{
                             content: "+";
+                        }
+                        .sub_tip,.add_tip{
+                            width: 240px;
+                            height: 100px;
+                            border-radius: 10px;
+                            background: fade(hsl(0,0,0),40%);
+                            position: absolute;
+                            top: -120px;
+                            left: -70px;
+                            text-align: center;
+                            line-height: 100px;
+                            display: none;
+                            color: white;
                         }
                         input{
                             display: inline-block;
