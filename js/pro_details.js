@@ -42,7 +42,7 @@ var pro_details = (function(){
         },
         handImg:function(data){
             data = JSON.parse(data);
-            pro_details.img_con.find('img').attr('src',data.img_list[0]);
+            pro_details.img_con.find('img').attr('src',data.img_list[0].replace('@w_100,h_100',''));
             var arr = [];
             // 循环获取到的图片地址集合
             for(var i=0; i<data.img_list.length; i++){
@@ -53,7 +53,7 @@ var pro_details = (function(){
             pro_details.img_list.find('ul').append(arr);
         },
         toggelImgsrc:function(){
-            pro_details.img_con.find('img').attr('src',this.src);
+            pro_details.img_con.find('img').attr('src',this.src.replace('@w_100,h_100',''));
         }
     }
 }());

@@ -1,0 +1,41 @@
+header {
+  position: relative;
+  height: 110px;
+}
+.header_wrap {
+  border-bottom: 1px solid #ccc;
+}
+.no_shop_wrap {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no_shop_wrap .no_shop_img {
+  margin-top: 40px;
+  background: url('https://dumall.baidu.com/f4040e4d75ca31545e9df24c6dc1fc2f.png') no-repeat;
+  background-size: cover;
+  width: 141px;
+  height: 141px;
+}
+.no_shop_wrap .no_shop_text {
+  width: 112px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  font-size: 14px;
+  margin: 30px 0;
+}
+.no_shop_wrap .btn_goshop {
+  width: 158px;
+  height: 38px;
+  color: white;
+  border: 0;
+  background: #f04146;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.no_shop_wrap .btn_goshop:hover {
+  background: rgba(255, 0, 0, 0.4);
+}
