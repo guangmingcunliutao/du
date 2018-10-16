@@ -6,10 +6,10 @@ header{
     border-bottom: 1px solid #ccc;
 }
 .section_wrap{
-    min-height: 500px;
+    min-height: 300px;
 }
 .no_shop_wrap{
-    min-height: 500px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,5 +40,227 @@ header{
     }
     .btn_goshop:hover{
         background: fade(red,40%);
+    }
+}
+.car_list_wrap{
+    width: 1208px;
+    margin: 0 auto;
+    .check{
+        display: block;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #979797;
+        border-radius: 2px;
+    }
+    .check:after{
+        content: "";
+        width: 10px;
+        height: 6px;
+        transform: rotate(-45deg);
+        border-left: 2px solid #f04146;
+        border-bottom: 2px solid #f04146;
+        margin: 4px auto 0;
+        display: block;
+        // display: none;
+    }
+    .car_item_title{
+        height: 50px;
+        margin: 20px auto 10px;
+        display: flex;
+        line-height: 50px;
+        text-align: center;
+        .checkWarp{
+            width: 35px;
+            height: 50px;
+            padding-left: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .selectAll{
+            width: 140px;
+            text-align: left;
+        }
+        .pro_name{
+            width: 570px;
+            text-align: left;
+        }
+        .price{
+            width: 106px;
+        }
+        .count{
+            width: 164px;
+        }
+        .sum{
+            width: 108px;
+        }
+        .action{
+            flex: 1;
+        }
+    }
+}
+.pro_item{
+    height: 120px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,.02);
+    .checkWarp{
+        width: 32px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item_content{
+        flex: 1;
+        height: 100px;
+        display: flex;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .pro_img{
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            background: white;
+            border: 1px solid #f2f2f2;
+            cursor: pointer;
+        }
+        .name_desc_wrap{
+            width: 612px;
+            height: 100px;
+            .pro_name{
+                font-size: 14px;
+                height: 22px;
+                line-height: 22px;
+            }
+        }
+        .pro_price{
+            width: 104px;
+            height: 100px;
+            text-align: center;
+            div{
+                height: 20px;
+                font-size: 14px;
+            }
+        }
+        .count_wrap{
+            width: 164px;
+            height: 100px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            span{
+                display: inline-block;
+                width: 45px;
+                height: 18px;
+                font-size: 14px;
+                color: #999;
+            }
+            .inp_num{
+                position: absolute;
+                display: inline-block;
+                height: 29px;
+                .num_sub,.num_add{
+                    display: inline-block;
+                    width: 20px;
+                    height: 27px;
+                    border: 1px solid #e1e1e1;
+                    cursor: pointer;
+                    float: left;
+                    text-align: center;
+                }
+                .num_sub::after{
+                    content: "-";
+                }
+                .num_add::after{
+                    content: "+";
+                }
+                .sub_tip,.add_tip{
+                    width: 240px;
+                    height: 100px;
+                    border-radius: 10px;
+                    background: fade(hsl(0,0,0),40%);
+                    position: absolute;
+                    top: -120px;
+                    left: -70px;
+                    text-align: center;
+                    line-height: 100px;
+                    display: none;
+                    color: white;
+                }
+                input{
+                    display: inline-block;
+                    width: 52px;
+                    height: 27px;
+                    outline: none;
+                    text-align: center;
+                    border: 0;
+                    border-top: 1px solid #e1e1e1;
+                    border-bottom: 1px solid #e1e1e1;
+                    float: left;
+                }
+                // 去掉数字input框的上下箭头
+                /* input::-webkit-outer-spin-button, */
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                }
+            }
+        }
+        .sum{
+            width: 108px;
+            text-align: center;
+            color: #f04146;
+        }
+        .action{
+            flex: 1;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+.shop_bottom{
+    height: 55px;
+    margin: 30px 0 0;
+    background: #f6f6f6;
+    .shop_count{
+        float: left;
+        width: 155px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        margin-left: 10px;
+        font-size: 12px;
+        span{
+            color: #f04146;
+        }
+    }
+    .shop_bottom_right{
+        float: right;
+        width: 410px;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        line-height: 55px;
+        font-size: 14px;
+        text-align: center;
+        .info{
+            color: #ccc;
+        }
+        .sum_price{
+            width: 96px;
+            color: red;
+            font-size: 20px;
+        }
+        .btnGo{
+            width: 158px;
+            background: #f04146;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
     }
 }

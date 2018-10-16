@@ -6,10 +6,10 @@ header {
   border-bottom: 1px solid #ccc;
 }
 .section_wrap {
-  min-height: 500px;
+  min-height: 300px;
 }
 .no_shop_wrap {
-  min-height: 500px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,4 +41,226 @@ header {
 }
 .no_shop_wrap .btn_goshop:hover {
   background: rgba(255, 0, 0, 0.4);
+}
+.car_list_wrap {
+  width: 1208px;
+  margin: 0 auto;
+}
+.car_list_wrap .check {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #979797;
+  border-radius: 2px;
+}
+.car_list_wrap .check:after {
+  content: "";
+  width: 10px;
+  height: 6px;
+  transform: rotate(-45deg);
+  border-left: 2px solid #f04146;
+  border-bottom: 2px solid #f04146;
+  margin: 4px auto 0;
+  display: block;
+}
+.car_list_wrap .car_item_title {
+  height: 50px;
+  margin: 20px auto 10px;
+  display: flex;
+  line-height: 50px;
+  text-align: center;
+}
+.car_list_wrap .car_item_title .checkWarp {
+  width: 35px;
+  height: 50px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.car_list_wrap .car_item_title .selectAll {
+  width: 140px;
+  text-align: left;
+}
+.car_list_wrap .car_item_title .pro_name {
+  width: 570px;
+  text-align: left;
+}
+.car_list_wrap .car_item_title .price {
+  width: 106px;
+}
+.car_list_wrap .car_item_title .count {
+  width: 164px;
+}
+.car_list_wrap .car_item_title .sum {
+  width: 108px;
+}
+.car_list_wrap .car_item_title .action {
+  flex: 1;
+}
+.pro_item {
+  height: 120px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.02);
+}
+.pro_item .checkWarp {
+  width: 32px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pro_item .item_content {
+  flex: 1;
+  height: 100px;
+  display: flex;
+}
+.pro_item .item_content img {
+  width: 100%;
+  height: 100%;
+}
+.pro_item .item_content .pro_img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  background: white;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+}
+.pro_item .item_content .name_desc_wrap {
+  width: 612px;
+  height: 100px;
+}
+.pro_item .item_content .name_desc_wrap .pro_name {
+  font-size: 14px;
+  height: 22px;
+  line-height: 22px;
+}
+.pro_item .item_content .pro_price {
+  width: 104px;
+  height: 100px;
+  text-align: center;
+}
+.pro_item .item_content .pro_price div {
+  height: 20px;
+  font-size: 14px;
+}
+.pro_item .item_content .count_wrap {
+  width: 164px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.pro_item .item_content .count_wrap span {
+  display: inline-block;
+  width: 45px;
+  height: 18px;
+  font-size: 14px;
+  color: #999;
+}
+.pro_item .item_content .count_wrap .inp_num {
+  position: absolute;
+  display: inline-block;
+  height: 29px;
+  /* input::-webkit-outer-spin-button, */
+}
+.pro_item .item_content .count_wrap .inp_num .num_sub,
+.pro_item .item_content .count_wrap .inp_num .num_add {
+  display: inline-block;
+  width: 20px;
+  height: 27px;
+  border: 1px solid #e1e1e1;
+  cursor: pointer;
+  float: left;
+  text-align: center;
+}
+.pro_item .item_content .count_wrap .inp_num .num_sub::after {
+  content: "-";
+}
+.pro_item .item_content .count_wrap .inp_num .num_add::after {
+  content: "+";
+}
+.pro_item .item_content .count_wrap .inp_num .sub_tip,
+.pro_item .item_content .count_wrap .inp_num .add_tip {
+  width: 240px;
+  height: 100px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: -120px;
+  left: -70px;
+  text-align: center;
+  line-height: 100px;
+  display: none;
+  color: white;
+}
+.pro_item .item_content .count_wrap .inp_num input {
+  display: inline-block;
+  width: 52px;
+  height: 27px;
+  outline: none;
+  text-align: center;
+  border: 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  float: left;
+}
+.pro_item .item_content .count_wrap .inp_num input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.pro_item .item_content .sum {
+  width: 108px;
+  text-align: center;
+  color: #f04146;
+}
+.pro_item .item_content .action {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.shop_bottom {
+  height: 55px;
+  margin: 30px 0 0;
+  background: #f6f6f6;
+}
+.shop_bottom .shop_count {
+  float: left;
+  width: 155px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.shop_bottom .shop_count span {
+  color: #f04146;
+}
+.shop_bottom .shop_bottom_right {
+  float: right;
+  width: 410px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 55px;
+  font-size: 14px;
+  text-align: center;
+}
+.shop_bottom .shop_bottom_right .info {
+  color: #ccc;
+}
+.shop_bottom .shop_bottom_right .sum_price {
+  width: 96px;
+  color: red;
+  font-size: 20px;
+}
+.shop_bottom .shop_bottom_right .btnGo {
+  width: 158px;
+  background: #f04146;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }
