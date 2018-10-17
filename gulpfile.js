@@ -93,8 +93,10 @@ gulp.task('connect', () => {
     });
 });
 
+gulp.task('livereload',['connect','watch']);
+
 // default：默认执行的任务
-gulp.task('default', ['build', 'connect']);
+gulp.task('default', ['build', 'connect','watch']);
 
 // gulp +  任务名称, 如果不写, 默认执行default任务
 // gulp 一共有4个api
