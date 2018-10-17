@@ -7,7 +7,7 @@ var proData = (function () {
         event: function () {
             var _this = this;
             $(document).ready(function () {
-                $.get('http://localhost:1101/php/du/php/product.php', _this.proDataHandl);
+                $.get('../php/product.php', _this.proDataHandl);
             });
             // 效果，滑过产品的时候产品图片放大
             this.product_list.on('mouseenter', '.pro_item', function () {

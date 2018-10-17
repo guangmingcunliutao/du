@@ -22,7 +22,7 @@ var doregister = (function () {
             var regName = /^\w.{0,15}$/;
             if (regName.test(username)) {
                 // 发送ajax请求
-                var url = 'http://localhost:1101/php/du/php/doregister.php';
+                var url = '../php/doregister.php';
                 var data = {
                     username: doregister._nameInp.val(),
                     sign: 1
