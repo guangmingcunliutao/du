@@ -76,6 +76,7 @@ gulp.task('css', () => {
 gulp.task('watch', () => {
     gulp.watch('project/**/*.html', ['html']);
     gulp.watch('project/**/*.js', ['js']);
+    gulp.watch('project/**/*.css', ['css']);
 });
 
 // 合并任务
