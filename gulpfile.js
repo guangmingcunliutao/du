@@ -2,9 +2,9 @@ const gulp = require('gulp'),
     uglify = require('gulp-uglify'), // 压缩js插件
     connect = require('gulp-connect'), // 开启服务器插件
     babel = require('gulp-babel'), // es6转es5插件
-    minify_css = require('gulp-minify-css'), // 压缩css插件
-    htmlmin = require('gulp-htmlmin'), // 压缩html插件
-    imagemin = require('gulp-imagemin'); // 压缩图片插件
+    clean_css = require('gulp-clean-css'), // 压缩css插件
+    htmlmin = require('gulp-htmlmin'); // 压缩html插件
+// imagemin = require('gulp-imagemin'); // 压缩图片插件
 
 
 gulp.task('all', () => {
@@ -59,6 +59,19 @@ gulp.task('js', () => {
         .pipe(connect.reload());
 });
 
+gulp.task('css', () => {
+    gulp.src('project/**/*.css')
+        .pipe(clean_css({
+            advanced: false, //类型：Boolean 默认：true [是否开启高级优化（合并选择器等）]
+            compatibility: 'ie7', //保留ie7及以下兼容写法 类型：String 默认：''or'*' [启用兼容模式； 'ie7'：IE7兼容模式，'ie8'：IE8兼容模式，'*'：IE9+兼容模式]
+            keepBreaks: true, //类型：Boolean 默认：false [是否保留换行]
+            keepSpecialComments: '*'
+            //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀
+        }))
+        .pipe(gulp.dest('dist'))
+        .pipe(connect.reload());
+});
+
 // 监听文件
 gulp.task('watch', () => {
     gulp.watch('project/**/*.html', ['html']);
@@ -66,21 +79,21 @@ gulp.task('watch', () => {
 });
 
 // 合并任务
-gulp.task('build', ['all', 'html', 'js']);
+gulp.task('build', ['all', 'html', 'js','css']);
 
 // 开启服务器
 gulp.task('connect', () => {
     connect.server({
         // 设置根目录
         root: 'dist',
-        livereload:true,
         // 设置端口
-        port: 9511
+        port: 9511,
+        livereload: true
     });
 });
 
 // default：默认执行的任务
-gulp.task('default',['build','connect']);
+gulp.task('default', ['build', 'connect']);
 
 // gulp +  任务名称, 如果不写, 默认执行default任务
 // gulp 一共有4个api
