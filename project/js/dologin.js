@@ -19,7 +19,7 @@ var dologin = (function () {
                 alert('用户名或密码不能为空');
             } else {
                 // 发送请求
-                var url = 'http://localhost:1101/php/du/dist/php/dologin.php';
+                var url = 'http://localhost:1101/php/du/project/php/dologin.php';
                 var data = {
                     username: username,
                     password: password || ''

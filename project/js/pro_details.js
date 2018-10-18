@@ -2,7 +2,7 @@ var pro_details = (function(){
     return {
         init:function(){
             this.pro_id = cookieHandle.getCookie('pro_id');
-            $.get('http://localhost:1101/php/du/dist/php/pro_details.php',{pro_id:this.pro_id},this.handImg);
+            $.get('http://localhost:1101/php/du/project/php/pro_details.php',{pro_id:this.pro_id},this.handImg);
             this.num_sub = $('.num_sub');
             this.num_add = $('.num_add');
             this.countInp = $('.countInp');

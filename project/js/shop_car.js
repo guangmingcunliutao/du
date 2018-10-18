@@ -7,7 +7,7 @@ var shop_car = (function () {
         },
         event: function () {
             var _this = this;
-            $.get('http://localhost:1101/php/du/dist/php/product.php', _this.allShopData);
+            $.get('http://localhost:1101/php/du/project/php/product.php', _this.allShopData);
         },
         getCarList: function () {
             // 获取localstorage里面的商品列表
