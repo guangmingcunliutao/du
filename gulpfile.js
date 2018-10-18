@@ -80,7 +80,7 @@ gulp.task('watch', () => {
 });
 
 // 合并任务
-gulp.task('build', ['all', 'html', 'js','css']);
+gulp.task('build', ['html', 'js','css']);
 
 // 开启服务器
 gulp.task('connect', () => {

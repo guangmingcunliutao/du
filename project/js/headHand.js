@@ -12,9 +12,9 @@ var headHand = (function () {
         },
         // 获取头部之后处理事件,暂时只发现了在load方法的回调函数中回去加载的节点
         handData: function (data) {
-            menu_wrap = $('.menu-wrap');
-            _username = $('.username');
-            head_menu = $('.head-menu');
+            var menu_wrap = $('.menu-wrap');
+            var _username = $('.username');
+            var head_menu = $('.head-menu');
             // 隐藏菜单，滑过显示
             head_menu.on('mouseenter', function () {
                 menu_wrap.stop().slideDown();
